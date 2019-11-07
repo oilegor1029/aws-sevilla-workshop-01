@@ -10,7 +10,7 @@ resource "aws_security_group" "http-for-web-nginx" {
 
   //Acceder solo desde el 80 en las IPs marcadas
   ingress {
-    from_port   = x
+    from_port   = 80
     to_port     = 80
     protocol    = "tcp"
     cidr_blocks = [ "0.0.0.0/0" ]
